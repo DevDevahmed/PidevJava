@@ -1,0 +1,38 @@
+.list-view {
+    -fx-background-color: transparent; /* Background color of the ListView */
+    -fx-border-color: linear-gradient(to bottom right, #272b3f, #256b51);
+    -fx-border-radius: 8px;
+    -fx-padding: 0px;
+}
+
+/* Style for the headers (if applicable) */
+.list-view .column-header-background {
+    /* Adjust styles as needed */
+}
+
+.list-view .column-header, .label {
+    -fx-background-color: transparent;
+    -fx-text-fill: #016A91; /* Text color */
+    -fx-font-size: 14px; /* Font size */
+}
+
+/* Style for odd rows */
+.list-cell:odd {
+    -fx-background-color: #F5F5F5; /* Background color */
+}
+
+/* Style for rows when hovering with the mouse */
+.list-cell:hover {
+    -fx-background-color: #E0E0E0; /* Background color on hover */
+}
+
+/* Style for selected cells */
+.list-cell:selected {
+    -fx-background-color: #ADD8E6; /* Background color */
+    -fx-text-fill: black; /* Text color */
+}
+
+.list-cell .text {
+    -fx-font-weight: bold; /* Bold text */
+    -fx-text-alignment: center; /* Centered text */
+}
