@@ -1,0 +1,56 @@
+CREATE VIEW V_CLIENT AS
+SELECT ID_client#, Nom
+FROM CLIENTS
+WHERE ID_client# NOT IN (SELECT DISTINCT ID_client# FROM RESERVATION);
+
+DECLARE
+    v_sql VARCHAR2(1000);
+BEGIN
+    v_sql := 'CREATE TABLE compte (
+                idcomp NUMBER,
+                password VARCHAR2(20) NOT NULL,
+                nom VARCHAR2(20) NOT NULL,
+                prenom VARCHAR2(20) UNIQUE
+              )';
+    EXECUTE IMMEDIATE v_sql;
+END;
+
+SELECT TO_CHAR(Date_maintenance, 'MM') AS Mois, COUNT(*) AS Nombre_de_maintenances
+FROM MAINTENANCES
+GROUP BY TO_CHAR(Date_maintenance, 'MM')
+ORDER BY COUNT(*) DESC
+FETCH FIRST 1 ROW ONLY;
+
+SELECT ID_terrain#, COUNT(*) AS Nombre_de_maintenances
+FROM MAINTENANCES
+GROUP BY ID_terrain#;
+
+SELECT *
+FROM RESERVATION
+WHERE (Heure_fin - Heure_debut) <= 1;
+
+SELECT Heure_debut, Heure_fin
+FROM RESERVATION;
+
+CREATE OR REPLACE PROCEDURE PROC_INSERTION(
+    p_ID_reservation IN NUMBER,
+    p_Date_reservation IN DATE,
+    p_Heure_debut IN DATE,
+    p_Heure_fin IN DATE,
+    p_ID_terrain# IN NUMBER,
+    p_ID_client# IN NUMBER
+) AS
+BEGIN
+    INSERT INTO RESERVATION(ID_reservation, Date_reservation, Heure_debut, Heure_fin, ID_terrain#, ID_client#)
+    VALUES (p_ID_reservation, p_Date_reservation, p_Heure_debut, p_Heure_fin, p_ID_terrain#, p_ID_client#);
+    COMMIT;
+END;
+
+CREATE OR REPLACE FUNCTION FN_NBRE_MAINT(p_ID_terrain# IN NUMBER) RETURN NUMBER IS
+    v_count NUMBER;
+BEGIN
+    SELECT COUNT(*) INTO v_count
+    FROM MAINTENANCES
+    WHERE ID_terrain# = p_ID_terrain#;
+    RETURN v_count;
+END;
