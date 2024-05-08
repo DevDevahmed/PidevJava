@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="repp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" styleClass="dark-background" stylesheets="@../css/Frstyles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.melocode.tunvistaaaa_j.FrontRecController">
+   <top>
+      <HBox prefHeight="125.0" prefWidth="200.0" styleClass="Border-Bottom" stylesheets="@../css/Frstyles.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="123.0" prefWidth="309.0">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8-menu-48.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#52b1da" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="123.0" prefWidth="113.0">
+               <children>
+                  <Text fill="#52b1da" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="123.0" prefWidth="546.0">
+               <children>
+                  <ImageView fitHeight="44.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8-show-property-48.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btn_monliste" mnemonicParsing="false" onAction="#golisterec" opacity="0.94" prefHeight="33.0" prefWidth="149.0" styleClass="dark-background" stylesheets="@../css/Frstyles.css" text="Liste Reclamation" textFill="#469bbf">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Button>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_RIGHT" prefHeight="123.0" prefWidth="331.0">
+               <children>
+                  <ImageView fitHeight="46.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/560199.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#469bbf" strokeType="OUTSIDE" strokeWidth="0.0" text="  Profile" wrappingWidth="76.859375">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" stylesheets="@../css/styles.css">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter Votre Reclamation" wrappingWidth="370.4010314941406">
+                     <font>
+                        <Font name="System Bold" size="29.0" />
+                     </font>
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.26540284360189575">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.9078947305679321" green="0.14886391162872314" blue="0.0798611119389534" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.14473684132099152" green="0.14004629850387573" blue="0.14004629850387573" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="501.0" prefWidth="1300.0">
+               <children>
+                  <Pane prefHeight="501.0" prefWidth="583.0" styleClass="pane" stylesheets="@../css/Frstyles.css">
+                     <children>
+                        <VBox alignment="CENTER" layoutX="38.0" layoutY="13.0" prefHeight="400.0" prefWidth="509.0" spacing="30.0" styleClass="form_container" stylesheets="@../css/styles.css">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="111.0" prefWidth="509.0" styleClass="form_container" stylesheets="@../css/styles.css">
+                                 <children>
+                                    <Text fill="#140505" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Description :" />
+                                    <TextField fx:id="tf_des" prefHeight="25.0" prefWidth="177.0" promptText="votre relamation" styleClass="progress" stylesheets="@../css/styles.css">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                                 <padding>
+                                    <Insets right="10.0" />
+                                 </padding>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="112.0" prefWidth="509.0" styleClass="form_container" stylesheets="@../css/styles.css">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="ID User :" />
+                                    <TextField fx:id="tf_iduser" prefHeight="37.0" prefWidth="404.0" styleClass="progress">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                                 <padding>
+                                    <Insets right="10.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="103.0" prefWidth="509.0" styleClass="form_container" stylesheets="@../css/styles.css">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Date :" />
+                                    <DatePicker fx:id="tf_date" prefHeight="35.0" prefWidth="224.0" promptText="date " styleClass="progress">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </DatePicker>
+                                 </children>
+                                 <padding>
+                                    <Insets right="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <ButtonBar layoutX="172.0" layoutY="419.0" prefHeight="72.0" prefWidth="230.0" styleClass="form_container">
+                           <buttons>
+                              <Button fx:id="btn_ajout" mnemonicParsing="false" onAction="#ajouterRec" styleClass="btn_workbench11" stylesheets="@../css/styles.css" text="Ajouter" textFill="#111010" />
+                              <Button fx:id="btn_ann" layoutX="132.0" layoutY="18.0" mnemonicParsing="false" onAction="#annulerRec" styleClass="btn_workbench11" stylesheets="@../css/styles.css" text="Annuler" />
+                           </buttons>
+                        </ButtonBar>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

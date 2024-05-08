@@ -1,0 +1,90 @@
+/* Styles pour le PieChart */
+.pie-chart {
+    -fx-background-color: transparent;
+}
+
+.pie-chart .chart-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-fill: #333;
+}
+
+.pie-chart .chart-legend {
+    -fx-font-size: 14px;
+    -fx-fill: #666;
+}
+
+.pie-chart .label {
+    -fx-font-size: 14px;
+    -fx-fill: #333;
+}
+
+.pie-chart .chart-pie-label-line {
+    -fx-stroke: #666;
+}
+
+.pie-chart .chart-pie-label-line {
+    -fx-stroke: #666;
+}
+
+.pie-chart .chart-pie-label-line .line {
+    -fx-stroke: #666;
+}
+
+.pie-chart .chart-pie-label-line .symbol {
+    -fx-stroke: #666;
+}
+
+.pie-chart .chart-pie {
+    -fx-stroke: #748CF1;
+}
+
+.pie-chart .chart-pie:hover {
+    -fx-stroke: #fff;
+}
+
+/* Styles pour le LineChart */
+.line-chart {
+    -fx-background-color: transparent;
+}
+
+.line-chart .chart-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-fill: #333;
+}
+
+.line-chart .chart-legend {
+    -fx-font-size: 14px;
+    -fx-fill: #666;
+}
+
+.line-chart .label {
+    -fx-font-size: 14px;
+    -fx-fill: #333;
+}
+
+.line-chart .axis-label {
+    -fx-font-size: 12px;
+    -fx-fill: #666;
+}
+
+.line-chart .axis-major-tick-mark {
+    -fx-stroke: #ddd;
+}
+
+.line-chart .axis-minor-tick-mark {
+    -fx-stroke: #ddd;
+}
+
+.line-chart .axis {
+    -fx-stroke: #ddd;
+}
+
+.line-chart .line-symbol {
+    -fx-background-color: #4CAF50; /* Couleur de la ligne */
+}
+
+.line-chart .line-symbol:hover {
+    -fx-background-color: #45a049; /* Couleur de la ligne au survol */
+}

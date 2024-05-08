@@ -1,14 +1,12 @@
-module com.example.gestion_reclamation {
+module com.melocode.tunvistaaaa_j {
     requires javafx.controls;
     requires javafx.fxml;
+    requires javafx.graphics;
+    //requires mysql.connector.java;
     requires java.sql;
-    requires twilio;
-    requires org.apache.pdfbox;
-    opens com.example.gestion_reclamation to javafx.fxml;
-    opens controllers to javafx.fxml;
-    opens entities to javafx.base; // Open the entities package to javafx.base
+   // requires org.apache.opennlp.tools;
 
-    exports com.example.gestion_reclamation;
-    exports controllers;
 
+    opens com.melocode.tunvistaaaa_j to javafx.fxml;
+    exports com.melocode.tunvistaaaa_j;
 }

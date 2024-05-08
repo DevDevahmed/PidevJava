@@ -1,0 +1,106 @@
+.dark-background{
+    -fx-background-color: #EEEEEE;
+}
+
+.form_container Button{
+
+    color: black;
+
+}
+
+.Border-Bottom{
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: #676767;
+}
+
+.pane{
+    -fx-background-color:#f2f2f2;
+    -fx-background-image: url("/images/bbb.png");
+    -fx-background-size: cover;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 16px;
+    -fx-background-radius: 16px;
+    -fx-border-style: solid;
+    -fx-border-color: #ffffff;
+
+}
+
+.form_container Button {
+    background: linear-gradient(to right, #141414, #141414 50%, #fff 50%, #fff);
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    width: 120px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.form_container Button span {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.form_container Button:hover {
+    color: #fff;
+}
+
+.form_container Button .background-layer {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: #141414;
+    z-index: 0;
+    transition: transform 0.5s;
+
+}
+
+.form_container Button:hover .background-layer {
+
+}
+
+
+.default-color0.chart-pie { -fx-pie-color: #ffd700; }
+.default-color1.chart-pie { -fx-pie-color: #ffa500; }
+.default-color2.chart-pie { -fx-pie-color: #860061; }
+.default-color3.chart-pie { -fx-pie-color: #adff2f; }
+.default-color4.chart-pie { -fx-pie-color: #ff5700; }
+
+.chart-pie-label-line {
+    -fx-stroke: #8b4513;
+    -fx-fill: #8b4513;
+}
+
+.chart-pie-label {
+    -fx-fill: #8b4513;
+    -fx-font-size: 1em;
+}
+.chart-legend {
+    -fx-background-color:  #fafad2;
+    -fx-stroke: #daa520;
+}
+
+
+
+.chart-series-line {
+    -fx-stroke-width: 2px;
+    -fx-effect: null;
+}
+
+.default-color0.chart-series-line { -fx-stroke: #e9967a; }
+.default-color1.chart-series-line { -fx-stroke: #f0e68c; }
+.default-color2.chart-series-line { -fx-stroke: #dda0dd; }
+
+.default-color0.chart-line-symbol { -fx-background-color: #e9967a, white; }
+.default-color1.chart-line-symbol { -fx-background-color: #f0e68c, white; }
+.default-color2.chart-line-symbol { -fx-background-color: #dda0dd, white; }
+
+
