@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.Controllers.Profile">
+   <children>
+      <BorderPane fx:id="profileSection" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" styleClass="primary-color" stylesheets="@design/StyleProfile.css">
+         <left>
+            <VBox prefHeight="600.0" prefWidth="314.0" spacing="20.0" styleClass="secondary-color" stylesheets="@design/StyleProfile.css" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+                     <children>
+                        <ImageView fx:id="PictureLabel" fitHeight="74.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Downloads/icons8-male-user-64.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="UserFIrstLastName" text="Hala Madrid">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="ModifierPictureBtn" mnemonicParsing="false" prefHeight="26.0" prefWidth="108.0" text="Modifier Profile" textFill="#fcfcfc">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="414.0" prefWidth="314.0" spacing="40.0">
+                     <children>
+                        <HBox fx:id="prfl" alignment="CENTER" prefHeight="21.0" prefWidth="314.0">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="27.0">
+                                 <image>
+                                    <Image url="@image/ic_user.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="profile" onMouseClicked="#navigateToProfileSection" prefHeight="14.0" prefWidth="70.0" text="Profile">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="21.0" prefWidth="314.0">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="27.0">
+                                 <image>
+                                    <Image url="@image/notification.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="22.0" prefWidth="87.0" text="Notification">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="mdp" alignment="CENTER" layoutX="10.0" layoutY="36.0" onMouseClicked="#navigateToPasswordSection" prefHeight="21.0" prefWidth="314.0">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="27.0">
+                                 <image>
+                                    <Image url="@image/password.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="motdepasse" prefHeight="14.0" prefWidth="70.0" text="Password">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="61.0" prefHeight="21.0" prefWidth="314.0">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="27.0">
+                                 <image>
+                                    <Image url="@image/settings.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="14.0" prefWidth="70.0" text="Settings">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Button fx:id="no5rej" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#logout" prefHeight="26.0" prefWidth="108.0" text="Logout" textFill="#fcfcfc">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="30.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="91.0" prefWidth="247.0" text="Profile Settings">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="30.0" left="50.0" right="50.0" top="30.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="534.0" spacing="20.0">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="158.0" text="Profile details">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <HBox fx:id="nom" prefHeight="32.0" prefWidth="535.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="30.0" prefWidth="115.0" text="First Name" />
+                              <Pane prefHeight="32.0" prefWidth="302.0">
+                                 <children>
+                                    <TextField fx:id="esm" layoutY="-4.0" prefHeight="36.0" prefWidth="303.0" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="prenom" layoutX="10.0" layoutY="40.0" prefHeight="32.0" prefWidth="535.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="30.0" prefWidth="115.0" text="Last Name" />
+                              <Pane prefHeight="32.0" prefWidth="302.0">
+                                 <children>
+                                    <TextField fx:id="la9ab" layoutY="-4.0" prefHeight="36.0" prefWidth="303.0" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="72.0" prefHeight="32.0" prefWidth="535.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="30.0" prefWidth="115.0" text="CIN" />
+                              <Pane prefHeight="32.0" prefWidth="302.0">
+                                 <children>
+                                    <TextField fx:id="CIN" layoutY="-4.0" prefHeight="36.0" prefWidth="303.0" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="10.0" layoutY="101.0" prefHeight="200.0" prefWidth="534.0" spacing="20.0">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="158.0" text="Contact info">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="32.0" prefWidth="535.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="30.0" prefWidth="115.0" text="Email" />
+                              <Pane prefHeight="32.0" prefWidth="302.0">
+                                 <children>
+                                    <TextField fx:id="Email" layoutY="-4.0" prefHeight="36.0" prefWidth="303.0" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="40.0" prefHeight="32.0" prefWidth="535.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="30.0" prefWidth="115.0" text="Phone Number" />
+                              <Pane prefHeight="32.0" prefWidth="302.0">
+                                 <children>
+                                    <TextField fx:id="tel" layoutY="-4.0" prefHeight="36.0" prefWidth="303.0" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                        <Button fx:id="SaveBtn" mnemonicParsing="false" onAction="#saveProfileChanges" prefHeight="40.0" prefWidth="155.0" text="Save Changes" textFill="#fcfcfc">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" />
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="20.0" left="20.0" right="30.0" />
+               </BorderPane.margin>
+            </VBox>
+         </center>
+      </BorderPane>
+      <BorderPane fx:id="passwordSection" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" styleClass="primary-color" stylesheets="@design/StyleProfile.css" visible="false">
+         <left>
+            <VBox prefHeight="600.0" prefWidth="314.0" spacing="20.0" styleClass="secondary-color" stylesheets="@design/StyleProfile.css" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+                     <children>
+                        <ImageView fx:id="TaswiraChange" fitHeight="74.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Downloads/icons8-male-user-64.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="NomPrenom" text="Hala Madrid">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="nbadeltaswira" mnemonicParsing="false" prefHeight="26.0" prefWidth="108.0" text="Modifier Profile" textFill="#fcfcfc">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="414.0" prefWidth="314.0" spacing="40.0">
+                     <children>
+                        <HBox fx:id="NemchilelProfile" alignment="CENTER" prefHeight="21.0" prefWidth="314.0">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="27.0">
+                                 <image>
+                                    <Image url="@image/ic_user.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="Nemchilelprofile" onDragDetected="#navigateToProfileSection" prefHeight="14.0" prefWidth="70.0" text="Profile">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="21.0" prefWidth="314.0">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="27.0">
+                                 <image>
+                                    <Image url="@image/notification.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="22.0" prefWidth="87.0" text="Notification">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="PasswordNav" alignment="CENTER" layoutX="10.0" layoutY="36.0" prefHeight="21.0" prefWidth="314.0">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="27.0">
+                                 <image>
+                                    <Image url="@image/password.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="NemchilelPassword" prefHeight="14.0" prefWidth="70.0" text="Password">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="61.0" prefHeight="21.0" prefWidth="314.0">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="27.0">
+                                 <image>
+                                    <Image url="@image/settings.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="14.0" prefWidth="70.0" text="Settings">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Button fx:id="khourouj" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#logout" prefHeight="26.0" prefWidth="108.0" text="Logout" textFill="#fcfcfc">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="30.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="91.0" prefWidth="247.0" text="Profile Settings">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="30.0" left="50.0" right="50.0" top="30.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <VBox alignment="CENTER" layoutX="10.0" layoutY="101.0" prefHeight="200.0" prefWidth="534.0" spacing="50.0">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="158.0" text="Change Password">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="32.0" prefWidth="535.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="30.0" prefWidth="115.0" text="Older Password" />
+                              <Pane prefHeight="32.0" prefWidth="302.0">
+                                 <children>
+                                    <TextField fx:id="OldPasswordField" layoutY="-4.0" prefHeight="36.0" prefWidth="303.0" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="40.0" prefHeight="32.0" prefWidth="535.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="30.0" prefWidth="115.0" text="New Password" />
+                              <Pane prefHeight="32.0" prefWidth="302.0">
+                                 <children>
+                                    <TextField fx:id="NewPasswordField" layoutY="-4.0" prefHeight="36.0" prefWidth="303.0" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="64.0" prefHeight="32.0" prefWidth="535.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="30.0" prefWidth="115.0" text="Confirmation" />
+                              <Pane prefHeight="32.0" prefWidth="302.0">
+                                 <children>
+                                    <TextField fx:id="ConfirmPasswordField" layoutY="-4.0" prefHeight="36.0" prefWidth="303.0" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                        <Button fx:id="NbadelPassword" mnemonicParsing="false" onAction="#savePasswordChanges" prefHeight="40.0" prefWidth="155.0" text="Save Changes" textFill="#fcfcfc">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" />
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="20.0" left="20.0" right="30.0" />
+               </BorderPane.margin>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

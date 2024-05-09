@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600" prefWidth="900" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.Controllers.Login">
+   <children>
+      <AnchorPane fx:id="main_authform" prefHeight="200.0" prefWidth="200.0" stylesheets="@design/styles.css">
+         <children>
+            <AnchorPane fx:id="login_form" layoutX="59.0" prefHeight="606.0" prefWidth="950.0">
+               <children>
+                  <ImageView fitHeight="43.0" fitWidth="75.0" layoutX="402.0" layoutY="78.0">
+                     <image>
+                        <Image url="@image/user.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="401.0" layoutY="121.0" prefHeight="26.0" prefWidth="75.0" text="Sign In" textFill="#16a47c">
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="22.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="login_idselect" alignment="CENTER" layoutX="310.0" layoutY="200.0" prefHeight="26.0" prefWidth="253.0" promptText="username or email" styleClass="text-field" stylesheets="@design/styles.css" />
+                  <PasswordField fx:id="login_selectpassword" alignment="CENTER" layoutX="310.0" layoutY="254.0" prefHeight="26.0" prefWidth="254.0" promptText="password" styleClass="text-field" stylesheets="@design/styles.css" />
+                  <TextField layoutX="161.0" layoutY="155.0" prefHeight="26.0" prefWidth="254.0" promptText="password" styleClass="text-field" stylesheets="@design/styles.css" visible="false" />
+                  <CheckBox fx:id="login_showpassword" layoutX="293.0" layoutY="306.0" mnemonicParsing="false" text="Show password" />
+                  <Button fx:id="login_btn" layoutX="346.0" layoutY="354.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="34.0" prefWidth="182.0" styleClass="btn" stylesheets="@design/styles.css" text="Login" />
+                  <Label fx:id="forgetpass3" layoutX="379.0" layoutY="448.0" text="Register account ?" />
+                  <Button fx:id="login_createaccount" layoutX="392.0" layoutY="472.0" mnemonicParsing="false" onAction="#switchForm" styleClass="btn" stylesheets="@design/styles.css" text="Register" />
+                  <Hyperlink fx:id="login_forgetpassword" layoutX="487.0" layoutY="303.0" text="Forgot Password ?" />
+               </children></AnchorPane>
+            <AnchorPane fx:id="signup_form" layoutX="45.0" prefHeight="606.0" prefWidth="920.0" visible="false">
+               <children>
+                  <Label layoutX="390.0" layoutY="73.0" prefHeight="26.0" prefWidth="86.0" text="Register" textFill="#16a47c">
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="22.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="register_email" alignment="CENTER" layoutX="309.0" layoutY="114.0" prefHeight="27.0" prefWidth="262.0" promptText="Email" styleClass="text-field" stylesheets="@design/styles.css" />
+                  <PasswordField fx:id="register_confirmationpassword" alignment="CENTER" layoutX="309.0" layoutY="360.0" prefHeight="27.0" prefWidth="262.0" promptText="Confirm Password" styleClass="text-field" stylesheets="@design/styles.css" />
+                  <TextField layoutX="161.0" layoutY="155.0" prefHeight="26.0" prefWidth="254.0" promptText="password" styleClass="text-field" stylesheets="@design/styles.css" visible="false" />
+                  <Button fx:id="register_btn" layoutX="360.0" layoutY="420.0" mnemonicParsing="false" onAction="#handleRegister" prefHeight="34.0" prefWidth="182.0" styleClass="btn" stylesheets="@design/styles.css" text="Sign Up" />
+                  <Label layoutX="418.0" layoutY="497.0" text="Sign In Account" />
+                  <Button fx:id="register_loginbtn" layoutX="433.0" layoutY="515.0" mnemonicParsing="false" onAction="#switchForm" styleClass="btn" stylesheets="@design/styles.css" text="Login" />
+                  <ImageView fitHeight="43.0" fitWidth="86.0" layoutX="390.0" layoutY="23.0">
+                     <image>
+                        <Image url="@image/userplus.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="register_firstname" alignment="CENTER" layoutX="309.0" layoutY="189.0" prefHeight="27.0" prefWidth="262.0" promptText="First Name" styleClass="text-field" stylesheets="@design/styles.css" />
+                  <TextField fx:id="register_lastname" alignment="CENTER" layoutX="309.0" layoutY="231.0" prefHeight="27.0" prefWidth="262.0" promptText="Last Name" styleClass="text-field" stylesheets="@design/styles.css" />
+                  <PasswordField fx:id="register_password" alignment="CENTER" layoutX="309.0" layoutY="318.0" prefHeight="27.0" prefWidth="262.0" promptText="Password" styleClass="text-field" stylesheets="@design/styles.css" />
+                  <TextField fx:id="register_tel" alignment="CENTER" layoutX="309.0" layoutY="275.0" prefHeight="27.0" prefWidth="262.0" promptText="Telephone" styleClass="text-field" stylesheets="@design/styles.css" />
+                  <TextField fx:id="register_cin" alignment="CENTER" layoutX="309.0" layoutY="155.0" prefHeight="27.0" prefWidth="262.0" promptText="CIN" styleClass="text-field" stylesheets="@design/styles.css" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="changepass1_form" layoutX="25.0" layoutY="11.0" prefHeight="378.0" prefWidth="550.0" visible="false">
+               <children>
+                  <Label layoutX="207.0" layoutY="43.0" prefHeight="26.0" prefWidth="162.0" text="Forget Password" textFill="#16a47c">
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="22.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="forget_email" alignment="CENTER" layoutX="150.0" layoutY="175.0" prefHeight="34.0" prefWidth="262.0" promptText="Email" styleClass="text-field" stylesheets="@design/styles.css" />
+                  <TextField layoutX="161.0" layoutY="155.0" prefHeight="26.0" prefWidth="254.0" promptText="password" styleClass="text-field" stylesheets="@design/styles.css" visible="false" />
+                  <Button fx:id="forget_proceedbtn" layoutX="197.0" layoutY="222.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="182.0" styleClass="btn" stylesheets="@design/styles.css" text="Proceed" />
+                  <Button fx:id="forget_backbtn" layoutX="261.0" layoutY="301.0" mnemonicParsing="false" styleClass="btn" stylesheets="@design/styles.css" text="Back " />
+                  <ImageView fitHeight="43.0" fitWidth="86.0" layoutX="245.0">
+                     <image>
+                        <Image url="@image/Password.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="changepass2_form" layoutX="25.0" layoutY="21.0" prefHeight="378.0" prefWidth="550.0" visible="false">
+               <children>
+                  <Label layoutX="207.0" layoutY="43.0" prefHeight="26.0" prefWidth="162.0" text="Forget Password" textFill="#16a47c">
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="22.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="forget_verificationcode" alignment="CENTER" layoutX="150.0" layoutY="175.0" prefHeight="34.0" prefWidth="262.0" promptText="Verification code" styleClass="text-field" stylesheets="@design/styles.css" />
+                  <TextField layoutX="161.0" layoutY="155.0" prefHeight="26.0" prefWidth="254.0" promptText="password" styleClass="text-field" stylesheets="@design/styles.css" visible="false" />
+                  <Button fx:id="forget_proceed2" layoutX="197.0" layoutY="222.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="182.0" styleClass="btn" stylesheets="@design/styles.css" text="Proceed" />
+                  <Button fx:id="forget_backtoemailverif" layoutX="261.0" layoutY="301.0" mnemonicParsing="false" styleClass="btn" stylesheets="@design/styles.css" text="Back " />
+                  <ImageView fitHeight="43.0" fitWidth="86.0" layoutX="245.0">
+                     <image>
+                        <Image url="@image/Password.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="changepass3_form" layoutX="35.0" layoutY="11.0" prefHeight="378.0" prefWidth="550.0" visible="false">
+               <children>
+                  <Label layoutX="193.0" layoutY="43.0" prefHeight="26.0" prefWidth="162.0" text="Forget Password" textFill="#16a47c">
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="22.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="161.0" layoutY="155.0" prefHeight="26.0" prefWidth="254.0" promptText="password" styleClass="text-field" stylesheets="@design/styles.css" visible="false" />
+                  <Button fx:id="forget_proceedtologinpage" layoutX="183.0" layoutY="198.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="182.0" styleClass="btn" stylesheets="@design/styles.css" text="Proceed" />
+                  <Button fx:id="forget_backtocodeverifbtn" layoutX="247.0" layoutY="300.0" mnemonicParsing="false" styleClass="btn" stylesheets="@design/styles.css" text="Back " />
+                  <ImageView fitHeight="43.0" fitWidth="86.0" layoutX="232.0">
+                     <image>
+                        <Image url="@image/Password.png" />
+                     </image>
+                  </ImageView>
+                  <PasswordField fx:id="forget_newpassword" alignment="CENTER" layoutX="162.0" layoutY="117.0" prefHeight="27.0" prefWidth="226.0" promptText="New Password" />
+                  <PasswordField fx:id="forget_confirmationnewpass" alignment="CENTER" layoutX="162.0" layoutY="155.0" prefHeight="27.0" prefWidth="226.0" promptText="Confirm your password" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
