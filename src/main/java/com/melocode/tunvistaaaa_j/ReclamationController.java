@@ -52,6 +52,8 @@ public class ReclamationController implements Initializable {
 
     @FXML
     private ListView<Reclamation> tableviewrec;
+    @FXML
+    private Pagination pagination;
 
 
 

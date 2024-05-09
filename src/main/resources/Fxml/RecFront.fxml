@@ -44,19 +44,7 @@
                   </Text>
                </children>
             </HBox>
-            <VBox alignment="CENTER" prefHeight="123.0" prefWidth="546.0">
-               <children>
-                  <ImageView fitHeight="44.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../images/icons8-show-property-48.png" />
-                     </image>
-                  </ImageView>
-                  <Button fx:id="btn_monliste" mnemonicParsing="false" onAction="#golisterec" opacity="0.94" prefHeight="33.0" prefWidth="149.0" styleClass="dark-background" stylesheets="@../css/Frstyles.css" text="Liste Reclamation" textFill="#469bbf">
-                     <font>
-                        <Font name="System Bold" size="15.0" />
-                     </font></Button>
-               </children>
-            </VBox>
+            <VBox alignment="CENTER" prefHeight="123.0" prefWidth="546.0" />
             <VBox alignment="CENTER_RIGHT" prefHeight="123.0" prefWidth="331.0">
                <children>
                   <ImageView fitHeight="46.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">

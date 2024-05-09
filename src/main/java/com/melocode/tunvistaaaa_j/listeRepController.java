@@ -11,6 +11,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -61,6 +62,8 @@ public class listeRepController implements Initializable {
     private TableColumn colcateg;
     @FXML
     private TableColumn coldate;
+    @FXML
+    private ListView<Reclamation> tableviewrec;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -73,14 +76,33 @@ public class listeRepController implements Initializable {
 
 
     public void showReclamation() {
-        ObservableList<Reclamation> list = loadReclamationData();
-        tab_repliste.setItems(list);
-        colid.setCellValueFactory(new PropertyValueFactory<>("id"));
-        coldesc.setCellValueFactory(new PropertyValueFactory<>("description"));
-        colcateg.setCellValueFactory(new PropertyValueFactory<>("categorie"));
-        coletat.setCellValueFactory(new PropertyValueFactory<>("etat"));
-        coliduser.setCellValueFactory(new PropertyValueFactory<>("iduser"));
-        coldate.setCellValueFactory(new PropertyValueFactory<>("date"));
+        ObservableList<Reclamation> list = getReclamations();
+        tableviewrec.setItems(list);
+    }
+    // Update the method to use ListView instead of TableView
+    public ObservableList<Reclamation> getReclamations() {
+        ObservableList<Reclamation> reclamations = FXCollections.observableArrayList();
+        String query = "SELECT id, description, categorie, etat, iduser, date FROM reclamation";
+
+        try (Connection con = DBConnexion.getConnection();
+             PreparedStatement st = con.prepareStatement(query);
+             ResultSet rs = st.executeQuery()) {
+
+            while (rs.next()) {
+                Reclamation rec = new Reclamation();
+                rec.setId(rs.getInt("id"));
+                rec.setDescription(rs.getString("description"));
+                rec.setCategorie(rs.getString("categorie"));
+                rec.setEtat(rs.getString("etat"));
+                rec.setIduser(rs.getString("iduser"));
+                rec.setDate(rs.getDate("date")); // Set the date directly
+                reclamations.add(rec);
+            }
+        } catch (SQLException e) {
+            // Log the exception or handle it appropriately
+            e.printStackTrace();
+        }
+        return reclamations;
     }
 
     // Méthode pour charger les données de la table reclamation depuis la base de données

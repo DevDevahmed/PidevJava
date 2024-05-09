@@ -85,7 +85,7 @@ public class ReponseController implements Initializable {
 
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-        // Set up the cell value factory
+        // Set up the cell value factory to display multiple attributes
         table_reponse.setItems(getReponses());
         table_reponse.setCellFactory(param -> new ListCell<>() {
             @Override
@@ -94,7 +94,8 @@ public class ReponseController implements Initializable {
                 if (empty || item == null) {
                     setText(null);
                 } else {
-                    setText(item.getDescription()); // Display the description of each reponse
+                    setText("ID: " + item.getId() + " | Description: " + item.getDescription() +
+                            " | ID Reclamation: " + item.getIdrec() + " | ID User: " + item.getIduser());
                 }
             }
         });
@@ -104,7 +105,6 @@ public class ReponseController implements Initializable {
             searchReponse(newValue.trim().toLowerCase());
         });
     }
-
 
     private void searchReponse(String searchQuery) {
         // Create a filtered list to hold the filtered reponse objects

@@ -58,8 +58,6 @@
                         <Font name="Century Gothic Bold" size="15.0" />
                      </font>
                   </Button>
-
-
                   <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="22.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../images/reponse.png" />
@@ -86,23 +84,27 @@
       </VBox>
       <Pane prefHeight="563.0" prefWidth="690.0">
          <children>
-            <Pane prefHeight="80.0" prefWidth="690.0">
+            <Pane layoutY="1.0" prefHeight="80.0" prefWidth="690.0">
                <children>
-                  <TextField fx:id="txt_serach" layoutX="447.0" layoutY="26.0" prefHeight="28.0" prefWidth="197.0" promptText="Search ...">
-                     <font>
-                        <Font name="Century Gothic Bold Italic" size="14.0" />
-                     </font>
-                  </TextField>
-                  <ImageView fitHeight="23.0" fitWidth="30.0" layoutX="424.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../images/search.png" />
-                     </image>
-                  </ImageView>
-                  <Text layoutX="27.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="WANDERWISE" wrappingWidth="339.13671875">
+                  <Text layoutX="14.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="WANDERWISE" wrappingWidth="218.3367156982422">
                      <font>
                         <Font name="Century Gothic Bold" size="22.0" />
                      </font>
                   </Text>
+                  <Pane layoutX="329.0" layoutY="12.0" prefHeight="42.0" prefWidth="331.0" style="-fx-background-color: #ffff; -fx-background-radius: 150;">
+                     <children>
+                        <ImageView fitHeight="23.0" fitWidth="30.0" layoutX="6.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/search.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="txt_serach" layoutX="34.0" layoutY="6.0" prefHeight="28.0" prefWidth="289.0" promptText="Search ..." style="-fx-background-radius: 100;">
+                           <font>
+                              <Font name="Century Gothic Bold Italic" size="14.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </Pane>
                </children>
             </Pane>
             <AnchorPane layoutX="-2.0" layoutY="122.0" prefHeight="440.0" prefWidth="690.0">
@@ -132,8 +134,8 @@
                               </VBox>
                               <VBox prefHeight="83.0" prefWidth="186.0" styleClass="form_container">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="ID User :" />
-                                    <TextField fx:id="tf_iduser" prefHeight="0.0" prefWidth="600.0" styleClass="progress">
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="User :" wrappingWidth="85.94648742675781" />
+                                    <TextField fx:id="tf_iduser" prefHeight="31.0" prefWidth="142.0" styleClass="progress">
                                        <VBox.margin>
                                           <Insets />
                                        </VBox.margin>
@@ -168,13 +170,13 @@
                   </Pane>
                   <Pane layoutX="1.0" layoutY="116.0" prefHeight="60.0" prefWidth="690.0">
                      <children>
-                        <ButtonBar layoutX="73.0" layoutY="13.0" prefHeight="34.0" prefWidth="509.0">
+                        <ButtonBar layoutX="16.0" layoutY="13.0" prefHeight="35.0" prefWidth="600.0">
                            <buttons>
                               <Button fx:id="btn_ajout" mnemonicParsing="false" onAction="#ajouterRec" stylesheets="@../css/styles.css" text="Ajouter" textFill="#111010" />
                               <Button fx:id="btn_mod" layoutX="302.0" layoutY="18.0" mnemonicParsing="false" onAction="#modifierRec" stylesheets="@../css/styles.css" text="Modifier" />
                               <Button fx:id="btn_supp" layoutX="217.0" layoutY="18.0" mnemonicParsing="false" onAction="#supprimerRec" text="Supprimer" />
                               <Button fx:id="btn_ann" layoutX="132.0" layoutY="18.0" mnemonicParsing="false" onAction="#annulerRec" text="Annuler" />
-                              <Button fx:id="btn_reprec" mnemonicParsing="false" onAction="#reponseRec" text="reponse" />
+                              <Button fx:id="btn_reprec" mnemonicParsing="false" onAction="#reponseRec" prefHeight="35.0" prefWidth="114.0" text="reponse" />
                            </buttons>
                            <styleClass>
                               <String fx:value="form_container" />
@@ -185,7 +187,7 @@
                   </Pane>
                   <Pane layoutX="3.0" layoutY="173.0" prefHeight="266.0" prefWidth="690.0">
                      <children>
-                        <ListView fx:id="tableviewrec" layoutX="8.0" layoutY="5.0" onMouseClicked="#getData" prefHeight="257.0" prefWidth="668.0" stylesheets="@../css/TableStyle.css" />
+                        <ListView fx:id="tableviewrec" layoutX="11.0" onMouseClicked="#getData" prefHeight="256.0" prefWidth="668.0" stylesheets="@../css/TableStyle.css" />
                      </children>
                   </Pane>
                </children>

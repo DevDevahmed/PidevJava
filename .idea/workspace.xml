@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="720b088e-8666-4672-8142-eae24796698f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/melocode/tunvistaaaa_j/ReclamationCellFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/melocode/tunvistaaaa_j/DBConnexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melocode/tunvistaaaa_j/DBConnexion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/melocode/tunvistaaaa_j/Reclamation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melocode/tunvistaaaa_j/Reclamation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/melocode/tunvistaaaa_j/ReclamationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melocode/tunvistaaaa_j/ReclamationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/melocode/tunvistaaaa_j/ReponseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melocode/tunvistaaaa_j/ReponseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/melocode/tunvistaaaa_j/listeRepController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melocode/tunvistaaaa_j/listeRepController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/RecFront.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/RecFront.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Reclamation.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Reclamation.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Reponse.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Reponse.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/listeRepp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/listeRepp.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/statistique.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/statistique.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/Frstyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/Frstyles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/TableStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/TableStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/styles.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2gBy1q7d3kZgr7kPZKSc2dbCAYH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.App.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;reclamation&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="720b088e-8666-4672-8142-eae24796698f" name="Changes" comment="" />
+      <created>1715185052429</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715185052429</updated>
+      <workItem from="1715185053503" duration="8294000" />
+      <workItem from="1715193830574" duration="52000" />
+      <workItem from="1715254544862" duration="413000" />
+      <workItem from="1715254976993" duration="997000" />
+      <workItem from="1715255991931" duration="2162000" />
+      <workItem from="1715267278322" duration="62000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
